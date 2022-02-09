@@ -1,0 +1,33 @@
+.footer {
+  background: #15141a;
+  text-align: center;
+  position: relative;;
+}
+
+.footer a:hover {
+  opacity: 0.6;
+}
+
+.footer__icons {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  max-width: 250px;
+  margin: 0 auto;
+  @media (max-width:767px){
+    padding-top: 30px;
+  }
+}
+
+.footer__copyright {
+  color:#444348;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  padding-top: 26px;
+  padding-bottom: 39px;
+  @media (max-width:767px){
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+}

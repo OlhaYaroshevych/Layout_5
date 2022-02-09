@@ -1,0 +1,237 @@
+.contacts {
+    background: #ededed;
+    padding-top: 55px;
+    margin-top: 60px;
+    @media (max-width: 1140px){
+        margin-top: 0px;
+    }
+    @media (max-width:767px){
+        padding-top: 30px;
+        margin: 0;
+    } 
+}
+  
+.contacts__subtitle {
+    text-align: center;
+    letter-spacing: 1.78px;
+}
+  
+.contacts__title {
+    margin-top: 4px;
+    text-align: center;
+}
+  
+.dashed-line-contacts {
+    display: block;
+    margin: 0 auto;
+    padding-top: 21px;
+}
+  
+.contacts__column {
+    text-align: center;
+    padding-top: 82px;
+    @media (max-width:767px){
+        padding-top: 30px;
+    }
+}
+
+.contacts-01  {
+    img {
+        padding-bottom: 18px;
+        margin-left: -20px;
+        @media (max-width:767px){
+            padding: 0;
+            margin: 0;
+        } 
+    }
+    p {
+        margin-left: -21px;
+        @media (max-width:767px){
+            margin-left: 0px;
+        } 
+    }
+}
+
+.contacts-02 {
+    img {
+        padding-bottom: 18px;
+        @media (max-width:767px){
+            padding: 0;
+        } 
+    }
+    span {
+        display: block;
+        padding-bottom: 18px;
+        margin-top: 4px;
+        @media (max-width:767px){
+            padding: 0;
+            margin: 0;
+        } 
+    }
+}
+
+.contacts-03  {
+    img {
+        padding-top: 5px;
+        padding-bottom: 23px;
+        margin-left: 18px;
+        @media (max-width:767px){
+            padding: 0;
+            margin: 0;
+        } 
+    }
+    p {
+        margin-left: 21px;
+        @media (max-width:767px){
+            margin: 0;
+        } 
+    }
+}
+
+.contacts__text  {
+    p {
+        margin-bottom: 0px;  
+    }
+    @media (max-width:767px){
+        font-size: 20px;
+    } 
+}
+
+// W E B F O R M ------------------------------------------------------
+
+.webform {
+    max-width: 770px;
+    margin: 0 auto;
+    @media (max-width:1023px){
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+}
+  
+.webform__container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    max-width: 770px;
+    background: #15141a;
+    margin-top: 49px;
+    @media (max-width:1023px){
+        width: 80%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 85px;
+    padding-left: 66px;
+    @media (max-width:1023px){
+        width: 100%;
+    }
+    @media (max-width:900px){
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    @media (max-width:767px){
+        align-items: center;
+    }
+    @media (max-width:423px){
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+  
+.webform__wrap {
+    display: flex;
+    column-gap: 19px;
+    width: 100%;
+    padding-top: 59px;
+    input {
+        width: 300px;
+        max-height: 50px;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        background:#15141a;
+        padding: 18px 0px 20px 17px;
+        margin-bottom: 4px;
+        &.subject {
+            margin-bottom: 0px;
+        }
+        @media (max-width:1023px){
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+    textarea {
+        width: 300px;
+        height: 190px;
+        color: #fff;
+        background:#15141a;
+        border-radius: 3px;
+        resize: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 13px 0px 0px 20px;
+        @media (max-width:1023px){
+            width: 100%;
+        }
+    }
+    @media (max-width:1023px){
+        width: 100%;
+    }
+    @media (max-width:767px){
+        flex-direction: column;
+        row-gap: 17px;
+    }
+    @media (max-width:425px){
+        padding-top: 40px;
+    }
+}
+
+.webform__container {
+    .wrap__left, .wrap__right {
+        @media (max-width:1023px){
+            flex: 1 1 50%;
+        }
+    }
+}
+
+.form-group:last-child {
+    margin-bottom: 0px;
+}
+  
+input::placeholder, textarea::placeholder {
+    color: #444348;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+  
+input:hover, textarea:hover {
+    border: 1px solid #008ed6;
+}
+  
+.webform__button {
+    width: 160px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    @media (max-width:767px){
+        width: 100%;
+    }
+}
+
+.map {
+    margin-top: 346px;
+    max-height: 370px;
+    overflow: hidden;
+    @media (max-width:767px){
+        margin-top: 645px;
+    }
+    @media (max-width:424px){
+        margin-top: 620px;
+    }
+}
+
+

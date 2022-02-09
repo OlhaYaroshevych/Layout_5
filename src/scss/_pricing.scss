@@ -1,0 +1,27 @@
+.pricing {
+    width: 100%;
+    background-image: url(../img/slider_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #15141a;
+} 
+
+.pricing__subtitle {
+    padding-top: 59px;
+    text-align: center;
+    letter-spacing: 1.78px;
+}
+
+.pricing__title {
+    margin-top: 4px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.dashed-line-pricing {
+    display: block;
+    margin: 0 auto;
+    padding-top: 21px;
+}
+
+// S L I D E R -------------------------------------------------------

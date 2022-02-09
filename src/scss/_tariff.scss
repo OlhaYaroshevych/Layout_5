@@ -1,0 +1,235 @@
+.tariff__subtitle {
+    padding-top: 55px;
+    text-align: center;
+    letter-spacing: 1.78px;
+}
+
+.tariff__title {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.dashed-line-tariff {
+    display: block;
+    margin: 0 auto;
+    padding-top: 21px;
+}
+
+.tariff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tariff__column {
+    margin-top: 70px;
+    text-align: center;
+    @media (max-width: 1140px){
+        margin-top: 30px;
+    }
+    // @media (max-width: 1100px){
+    //     padding-top: 60px;
+    // }
+    // @media (max-width: 767px){
+    //     padding-top: 30px;
+    // }
+}
+
+.card {
+    &:first-child {
+        margin-left: -1px;
+        @media (max-width: 1140px){
+            margin-left: 0px;
+        }
+    }
+    &:nth-child(2) {
+        margin-left: 11px;
+        margin-right: 2px;
+        @media (max-width: 1140px){
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+    &:nth-child(3) {
+        margin-left: 24px;
+        margin-right: -1px;
+        @media (max-width: 1140px){
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    }
+    &:nth-child(4) {
+        margin-left: 28px;
+        margin-right: -1px;
+        @media (max-width: 1140px){
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    }
+    &:hover{
+        .card__header {
+            color: #008ed6;
+        }
+        .card__price {
+        color: #fff;
+        background-color: #008ed6;
+        }
+        .card__button {
+            .order__button {
+            border: 1px solid $color_1;
+            color: #fff;
+            background-color: #008ed6;
+            }
+        }
+    }
+}
+
+.card__header {
+    color: #212529;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    letter-spacing: 0.7px;
+    border-bottom:  1px solid #e5e5e5;
+}
+
+.card__price {
+    color: #1a1a1a;
+    font-size: 55px;
+    font-weight: 600;
+    max-width: 270px;
+    padding-top: 24px;
+    padding-bottom: 9px;
+    padding-left: 12px;
+    letter-spacing: 4px;
+    .period {
+        color: #a9a9a9;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        margin-top: -14px;
+        margin-left: -12px;
+        @media (max-width: 1140px){
+            margin: 0px;
+        }
+    }
+    sup {
+        position: absolute;
+        top: 25.5%;
+        left: 41%;
+        font-size: 27px;
+        &.index {
+            left: 35%;
+        }            
+    }
+    @media (max-width: 1140px) {
+        padding: 0px;
+        sup {
+            position: relative;
+            top: -20%;
+            left: 0;
+            &.index {
+                left: 0;
+            }
+        }  
+    }
+    @media (max-width: 990px) {
+        margin: 0 auto;
+    }
+    @media (max-width: 549px) {
+        font-size: 50px;
+        sup {
+           font-size: 23px;
+        }
+    }
+}
+
+.card__text {
+    color: #a9a9a9;
+    font-size: 18px;
+    padding-top: 52px;
+    padding-left: 22px;
+    padding-right: 18px;
+    span {
+        &:first-child {
+            display: block;
+            margin-top: -1px;
+            padding-left: 20px;
+            padding-right: 21px;
+        }
+        &:last-child {
+            display: block;
+            margin-top: -2px;
+        }
+    }
+    @media (max-width: 990px) {
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }   
+}
+
+.card__button {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    @media (max-width: 1140px){
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    @media (max-width: 990px) {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+.tariff__button {
+    border:  1px solid #e5e5e5;
+    flex: 0 1 59%;
+    margin-left: 58px;
+    padding: 15px 0px;
+    @media (max-width: 990px) {
+        margin-left: 0;
+        flex: 0 1 100%;
+    }
+}
+
+.random_indent {
+    margin: 0 auto;
+}
+
+
+    
+
+// .tariff__wrapper {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr 1fr;
+// }
+
+@media (max-width: 990px) {
+    .card-deck {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 20px;
+    }
+    .card-deck .card {
+        flex: 1 1 40%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 549px) {
+    .card-deck {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 20px;
+    }
+    .card-deck .card {
+        flex: 1 1 100%;
+        margin: 0;
+    }
+}
