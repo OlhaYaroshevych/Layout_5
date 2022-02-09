@@ -4,8 +4,8 @@ $(document).ready(function(){
         dots:true,
         slidesToShow:2,
         slidesToScroll:1,
-		autoplay:false,
-		autoplaySpeed: 15000,
+		autoplay:true,
+		autoplaySpeed: 4000,
         responsive: [
             {
               breakpoint: 1024,
